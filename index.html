@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Movie Search App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app">
+        <div class="main-container">
+            <div class="content-wrapper">
+                <!-- Header -->
+                <header class="header">
+                    <div class="header-left">
+                        
+                        <div class="app-title">
+                            🎬 Movie Search App
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-container-small">
+                            <div class="search-input-wrapper">
+                                
+                                <input type="text" class="search-input-small" placeholder="Search">
+                            </div>
+                        </div>
+                        <button class="search-button">
+                            <span>Search</span>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <main class="main-content">
+                    <div class="content-container">
+                        
+
+                        <!-- Movies Grid -->
+                        <div class="movies-section">
+    <!-- Row 1 -->
+    <div class="movies-row">
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/75/Tourist_Family.jpg" alt="Tourist Family" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Tourist Family</div>
+                <div class="movie-meta">2025 · 8.3</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/Dragon_2025_poster.jpg" alt="Dragon" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Dragon</div>
+                <div class="movie-meta">2025 · 7.9</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Veera_Dheera_Sooran.jpg" alt="Veera Dheera Sooran: Part 2" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Veera Dheera Sooran: Part 2</div>
+                <div class="movie-meta">2025 · 6.9</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d9/Kudumbasthan.jpg" alt="Kudumbasthan" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Kudumbasthan</div>
+                <div class="movie-meta">2025 · 7.3</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/df/Retro_film_poster.jpg" alt="Retro" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Retro</div>
+                <div class="movie-meta">2025 · 6.9</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="movies-row">
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Kaadhal_Enbadhu_Podhu_Udamai_poster.jpg" alt="Kaadhal Enbadhu Podhu Udamai" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Kaadhal Enbadhu Podhu Udamai</div>
+                <div class="movie-meta">2025 · 6.0</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Good_Bad_Ugly_poster.jpg" alt="Good Bad Ugly" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Good Bad Ugly</div>
+                <div class="movie-meta">2025 · 7.1</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/95/Thug_Life_2025.jpg" alt="Thug Life" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Thug Life</div>
+                <div class="movie-meta">2025 · 4.3</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/DD_Next_Level_Poster.jpg" alt="Devil's Double Next Level" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Devil's Double Next Level</div>
+                <div class="movie-meta">2025 · 5.0</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/40/Ace_film_poster.jpg" alt="ACE" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">ACE</div>
+                <div class="movie-meta">2025 · 8.6</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="movies-row">
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/f/f5/Jora_Kaiya_Thattunga.jpg" alt="Jora Kaiya Thattunga" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Jora Kaiya Thattunga</div>
+                <div class="movie-meta">2025 · 5.4</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Lal_Salaam_2024_poster.jpg" alt="Lal Salaam" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Lal Salaam</div>
+                <div class="movie-meta">2025 · 4.5</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Padai_Thalaivan.jpg" alt="Padai Thalaivan" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Padai Thalaivan</div>
+                <div class="movie-meta">2025 · 7.4</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Madras_Matinee.jpg" alt="Madras Matinee" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Madras Matinee</div>
+                <div class="movie-meta">2025 · 9.0</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e2/Chennai_City_Gangsters.jpg" alt="Chennai City Gangsters" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Chennai City Gangsters</div>
+                <div class="movie-meta">2025 · 4.9</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="movies-row">
+        <div class="movie-card">
+            <img src="https://example.com/kuberaa.jpg" alt="Kuberaa" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Kuberaa</div>
+                <div class="movie-meta">2025 · ?</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Kannappa_%28film%29.jpg" alt="Kannappa" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Kannappa</div>
+                <div class="movie-meta">2025 · 9.2</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/54/Amaran_2024_poster.jpg" alt="Amaran" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Amaran</div>
+                <div class="movie-meta">2024 · 8.1</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e8/Kanguva_poster.jpg" alt="Kanguva" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Kanguva</div>
+                <div class="movie-meta">2024 · 4.5</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Aranmanai_4.jpg" alt="Aranmanai 4" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Aranmanai 4</div>
+                <div class="movie-meta">2024 · 5.0</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 5 -->
+    <div class="movies-row">
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/Raayan_poster.jpg" alt="Raayan" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Raayan</div>
+                <div class="movie-meta">2024 · 6.5</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/5c/Demonte_Colony_2.jpg" alt="Demonte Colony 2" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Demonte Colony 2</div>
+                <div class="movie-meta">2024 · 6.6</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Sorgavaasal.jpg" alt="Sorgavaasal" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Sorgavaasal</div>
+                <div class="movie-meta">2024 · 6.6</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9c/Neela_Nira_Sooriyan.jpg" alt="Neela Nira Sooriyan" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Neela Nira Sooriyan</div>
+                <div class="movie-meta">2024 · 8.1</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Kadaisi_Ulaga_Por_poster.jpg" alt="Kadaisi Ulaga Por" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Kadaisi Ulaga Por</div>
+                <div class="movie-meta">2024 · 6.1</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 6 -->
+    <div class="movies-row">
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/91/Lubber_Pandhu.jpg" alt="Lubber Pandhu" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Lubber Pandhu</div>
+                <div class="movie-meta">2024 · 8.2</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Maharaja_2024_film_poster.jpg" alt="Maharaja" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Maharaja</div>
+                <div class="movie-meta">2024 · 8.4</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/68/Vettaiyan_poster.jpg" alt="Vettaiyan" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Vettaiyan</div>
+                <div class="movie-meta">2024 · 6.9</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/The_Greatest_of_All_Time.jpg" alt="The Greatest of All Time" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">The Greatest of All Time</div>
+                <div class="movie-meta">2024 · 5.7</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Indian_2_poster.jpg" alt="Indian 2" class="movie-poster" onclick="showMovieDetails('550')">
+            <div class="movie-info">
+                <div class="movie-title">Indian 2</div>
+                <div class="movie-meta">2024 · 3.8</div>
+            </div>
+        </div>
+    </div>
+</div>
+     <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-content">
+                            Made by Sathvika
+                        </div>
+                    </div>
+                </footer>
+
+    <script src="index.js"></script>
+
+    <div id="movieModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <img id="modalPoster" src="" alt="Poster" />
+    <h2 id="modalTitle"></h2>
+    <p id="modalOverview"></p>
+    <p><strong>Release:</strong> <span id="modalRelease"></span></p>
+    <p><strong>Genres:</strong> <span id="modalGenres"></span></p>
+    <p><strong>Rating:</strong> <span id="modalRating"></span> ⭐</p>
+  </div>
+
+  
+   
+</body>
+</html>
+
+
